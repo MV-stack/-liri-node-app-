@@ -5,9 +5,9 @@ Preview Link: https://api.spotify.com/v1/tracks/7fBv7CLKzipRk6EC6TWHOB
 Album: Beauty Behind The Madness
 ************Concert************
 Artist name: Bruno Mars
-Name of the venue: Mercedes-Benz Superdome
-Venue location: New Orleans
-Date of the event: 07/01/2020
+Name of the venue: Park Theater
+Venue location: Las Vegas
+Date of the event: 04/20/2020
 ************Movie*************
 Movie: Onward
 Year: 2020
