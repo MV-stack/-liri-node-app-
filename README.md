@@ -8,11 +8,11 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
 ## Instructions
 
-LIRI bot is like iPhone's SIRI, but takes the following written commands instead of speech:
-
-   * `concert-this`
+LIRI takes the following written commands instead of speech:
 
    * `spotify-this-song`
+
+   * `concert-this`
 
    * `movie-this`
 
@@ -20,19 +20,9 @@ LIRI bot is like iPhone's SIRI, but takes the following written commands instead
 
 ## What Each Command Does
 
-**LIRI** searches **Bands in Town** for concerts, **Spotify** for songs, and **OMDB** for movies.
+**LIRI** searches **Spotify** for songs, **Bands in Town** for concerts, and **OMDB** for movies.
 
-1. **`node liri.js concert-this '<artist/band name here>'`**
-
-   * Searches the Bands in Town Artist Events API for an artist and renders the following information about each event to the terminal:
-
-     * Name of the venue
-
-     * Venue location
-
-     * Date of the Event (using the format "MM/DD/YYYY")
-
-2. **`node liri.js spotify-this-song '<song name here>'`**
+1. **`node liri.js spotify-this-song '<song name here>'`**
 
    * Displays the following information about the selected song in your terminal/bash window
 
@@ -45,6 +35,17 @@ LIRI bot is like iPhone's SIRI, but takes the following written commands instead
      * The album containing the song
 
    * If no song is provided, the program defaults to "The Sign" by Ace of Base.
+
+2. **`node liri.js concert-this '<artist/band name here>'`**
+
+   * Searches the Bands in Town Artist Events API for an artist and renders the following information about each event to the terminal:
+
+     * Name of the venue
+
+     * Venue location
+
+     * Date of the Event (using the format "MM/DD/YYYY")
+
 
 3. **`node liri.js movie-this '<movie name here>'`**
 
@@ -92,8 +93,8 @@ LIRI bot is like iPhone's SIRI, but takes the following written commands instead
    
 ## Screenshots
      
-![concert-this](images/concert-this.PNG)
 ![spotify-this-song](images/spotify-this-song.PNG)
+![concert-this](images/concert-this.PNG)
 ![movie-this](images/movie-this.PNG)
 ![do-what-it-says](images/do-what-it-says.PNG)
 
