@@ -1,8 +1,14 @@
 ************Song************
-Artist: Kygo
+Artist: The Weeknd
+Song Name: The Hills
+Preview Link: https://api.spotify.com/v1/tracks/7fBv7CLKzipRk6EC6TWHOB
+Album: Beauty Behind The Madness
 ************Concert************
-Artist name: bon jovi
-Name of the venue: Tacoma Dome************Movie*************
+Artist name: Bruno Mars
+Name of the venue: Mercedes-Benz Superdome
+Venue location: New Orleans
+Date of the event: 07/01/2020
+************Movie*************
 Movie: Onward
 Year: 2020
 IMDB Rating: undefined
@@ -10,5 +16,9 @@ Rotten Tomatoes Rating: 87%
 Country: USA
 Language: English
 Plot: Set in a suburban fantasy world, two teenage elf brothers embark on a quest to discover if there is still magic out there.
-Actors: Tom Holland, Chris Pratt, Julia Louis-Dreyfus, Octavia Spencer************Song************
+Actors: Tom Holland, Chris Pratt, Julia Louis-Dreyfus, Octavia Spencer
+************Song************
 Artist: Backstreet Boys
+Song Name: I Want It That Way
+Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One

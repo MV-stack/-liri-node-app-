@@ -43,7 +43,8 @@ function getBandsInTown(artist) {
         console.log("Date of the event: " + moment(response.data[0].datetime).format("MM/DD/YYYY") + "\r\n");
 
         // Append concert info to log.txt
-        var concerts = "************Concert************" + "\nArtist name: " + artist + "\nName of the venue: " + response.data[0].venue.name;
+        var concerts = "************Concert************" + "\nArtist name: " + artist + "\nName of the venue: " + response.data[0].venue.name + "\r\n" + 
+        "Venue location: " + response.data[0].venue.city + "\r\n" + "Date of the event: " + moment(response.data[0].datetime).format("MM/DD/YYYY") + "\r\n";
         fs.appendFile("log.txt", concerts, function(err) {
             if (err) throw err;
         });
@@ -65,7 +66,8 @@ function getSpotify(songName) {
         console.log("Preview Link: " + data.tracks.items[0].href + "\r\n");
         console.log("Album: " + data.tracks.items[0].album.name + "\r\n");
         // Apppend song info to log.txt
-        var songs = "************Song************" + "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\r\n" ;
+        var songs = "************Song************" + "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\r\n" + "Song Name: " + data.tracks.items[0].name + "\r\n" + 
+        "Preview Link: " + data.tracks.items[0].href + "\r\n" + "Album: " + data.tracks.items[0].album.name + "\r\n";
         fs.appendFile("log.txt", songs, function(err) {
             if (err) throw err;
         });
@@ -89,9 +91,7 @@ function getOMDB(movie) {
         console.log("Plot: " + response.data.Plot + "\r\n");
         console.log("Actors: " + response.data.Actors + "\r\n");
         // Append movie info to log.txt
-        var movies = "************Movie*************" + "\nMovie: " + response.data.Title + "\nYear: " + response.data.Year + "\nIMDB Rating: " + response.data.imbdRating +
-        "\nRotten Tomatoes Rating: " + response.data.Ratings[1].Value + "\nCountry: " + response.data.Country + "\nLanguage: " + response.data.Language + "\nPlot: " + 
-        response.data.Plot + "\nActors: " + response.data.Actors;
+        var movies = "************Movie*************" + "\nMovie: " + response.data.Title + "\r\n" + "Year: " + response.data.Year + "\r\n" + "IMDB Rating: " + response.data.imbdRating + "\r\n" + "Rotten Tomatoes Rating: " + response.data.Ratings[1].Value + "\r\n" + "Country: " + response.data.Country + "\r\n" + "Language: " + response.data.Language + "\r\n" + "Plot: " + response.data.Plot + "\r\n" + "Actors: " + response.data.Actors + "\r\n";
         fs.appendFile("log.txt", movies, function(err) {
             if (err) throw err;
         });
